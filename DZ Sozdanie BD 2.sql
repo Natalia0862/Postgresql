@@ -42,7 +42,7 @@ create table if not exists ALBOM_TREK (
 create table if not exists COLLECTION (
 	id serial primary key,
 	ALBOM_TREK_id integer not null references ALBOM_TREK(id),
-	number integer not null,
+	data_collection data not null,
 	description text not null
 );
 	
